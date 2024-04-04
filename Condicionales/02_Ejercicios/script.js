@@ -1,14 +1,14 @@
-console.log(vinculo)
+console.log("vinculo")
 
 function agregarNumeros()
 {
     let resultado =""
-    let num1 = prompt("agregue el primer numero")
-    let num2 = prompt("agregue el segundo numero")
+    let num1 = prompt("Agregue el primer numero")
+    let num2 = prompt("Agregue el segundo numero")
     if(num1 > num2){
-        resultado = ` el primer numero es mayor: ${num1} - el segundo es menor: ${num2}`
+        resultado = ` El primer numero es mayor: ${num1} - El segundo es menor: ${num2}`
     }else{
-        resultado = ` el segundo numero es mayor: ${num2} - el primero es menor: ${num1}`
+        resultado = ` El segundo numero es mayor: ${num2} - El primero es menor: ${num1}`
     }
     document.getElementById(`lista`).innerHTML = resultado;
 }
