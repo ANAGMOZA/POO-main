@@ -1,15 +1,15 @@
-console.log("vinculado")
-function identificarTemperatura()
-{
-    let mensaje ="";
-    let temperatura = prompt("Indique la temperatura actual")
+function IdentificadorUsuario(){
 
-    if (temperatura < 0) {
-        mensaje = `Hace frio actualmente. Temperatura actual: <h2>${temperatura}°</h2>`
-    }else if (temperatura > 0, temperatura <= 25) {
-            mensaje = `La temperatura es agradable. Temperatura actual <h2>${temperatura}°</h2>`
-    } else if (temperatura > 25, temperatura <= 40) {
-        mensaje = `Hace calor actualmente. Temperatura actual <h2>${temperatura}°</h2>`
-    }
-    document.getElementById(`lista`).innerHTML = mensaje;
+    
+let nombreUsuario = "usuario123";
+let contraseña = "secreto";
+
+let userInputUsername = prompt("Introduzca su nombre de usuario:");
+let userInputPassword = prompt("Introduzca su contraseña:");
+
+if (userInputUsername === nombreUsuario && userInputPassword === contraseña) {
+  alert("Acceso concedido");
+} else {
+  alert("Acceso denegado");
+}
 }

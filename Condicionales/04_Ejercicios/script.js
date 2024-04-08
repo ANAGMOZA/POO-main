@@ -1,15 +1,14 @@
-function IdentificadorUsuario(){
+function IdentificadorVariable(){
+  let resu1 ="";
+  let numero = parseFloat(prompt("Ingrese un numero"));
 
-    
-let nombreUsuario = "usuario123";
-let contraseña = "secreto";
-
-let userInputUsername = prompt("Introduzca su nombre de usuario:");
-let userInputPassword = prompt("Introduzca su contraseña:");
-
-if (userInputUsername === nombreUsuario && userInputPassword === contraseña) {
-  alert("Acceso concedido");
-} else {
-  alert("Acceso denegado");
-}
+  if (numero > 0){
+    resu1 = `El numero <h2>${numero}</h2> es positivo`;
+  
+  } else if (numero < 0){
+    resu1 = `El numero <h2>${numero}</h2> es negativo`;
+  } else {
+    resu1 = `El numero <h2>${numero}</h2> es igual a cero`;
+  }
+  document.getElementById(`lista`).innerHTML = resu1;
 }

@@ -1,14 +1,15 @@
-console.log("vinculo")
-
-function agregarNumeros()
+console.log("vinculado")
+function identificarTemperatura()
 {
-    let resultado =""
-    let num1 = prompt("Agregue el primer numero")
-    let num2 = prompt("Agregue el segundo numero")
-    if(num1 > num2){
-        resultado = ` El primer numero es mayor: ${num1} - El segundo es menor: ${num2}`
-    }else{
-        resultado = ` El segundo numero es mayor: ${num2} - El primero es menor: ${num1}`
+    let mensaje ="";
+    let temperatura = prompt("Indique la temperatura actual")
+
+    if (temperatura < 0) {
+        mensaje = `Hace frio actualmente. Temperatura actual: <h2>${temperatura}°</h2>`
+    }else if (temperatura > 0, temperatura <= 25) {
+            mensaje = `La temperatura es agradable. Temperatura actual <h2>${temperatura}°</h2>`
+    } else if (temperatura > 25, temperatura <= 40) {
+        mensaje = `Hace calor actualmente. Temperatura actual <h2>${temperatura}°</h2>`
     }
-    document.getElementById(`lista`).innerHTML = resultado;
+    document.getElementById(`lista`).innerHTML = mensaje;
 }
