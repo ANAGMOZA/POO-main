@@ -1,7 +1,7 @@
 function IdentificadorUsuario(){
   
-let = mensaje = "";
-let nombreUsuario = "usuario123";
+const  mensaje = "";
+const nombreUsuario = "usuario123";
 let contraseña = "secreto";
 
 let userInputUsername = prompt("Introduzca su nombre de usuario:");
