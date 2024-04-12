@@ -1,18 +1,17 @@
-function sumaNumeros() {
-    let suma = 0;
-    let numero = 1;
-    let array = [];
-    let cadena = "";
-
-    while (numero <= 10) {
-        array.push(numero);
-        suma += numero;
-        cadena += numero + " + ";
-        numero++;
+function sumaNumeros(){
+    let sum = 0;
+    let i = 1;
+    let sumaParcial = "";
+    
+    while (i <= 10) {
+        sum += i;
+        if (i < 10) {
+            sumaParcial += i + " + ";
+        } else {
+            sumaParcial += i;
+        }
+        i++;
     }
-
-    cadena = cadena.slice(0, -3) + " = " + suma;
-
-    document.getElementById(`lista`).innerHTML = `<p>Suma de números del 1 al 10:</p> <br><h2>${cadena}</h2>`;
-    document.getElementById(`array`).innerHTML = `<p>Array de números:</p> <br><h2>${array}</h2>`;
+    
+    document.getElementById(`lista`).innerHTML = `<p>Suma de números del 1 al 10:</p> <br><h2>${sumaParcial} = ${sum}</h2>`;
 }
